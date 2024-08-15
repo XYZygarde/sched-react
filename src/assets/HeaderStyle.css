@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+    --navDiv:#393E46;
+    --headFont: "Inter", sans-serif;
+    --w: #fff;
+}
+
+.navBar{
+    height: 100px;
+    width: 100%;
+    background: #393E46;
+    display: flex;
+    align-items: center;
+}
+.navBar h2{
+    font-size: 2.5rem;
+    font-family: var(--headFont);
+    left: 3.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: absolute;
+    color: var(--w);
+}
+.navBar span{
+    font-size: 1.1rem;
+    position: absolute;
+    right: 3rem;
+    letter-spacing: 3px;
+    color: var(--w);
+}
+
+@media (max-width: 850px){
+    .navBar h2{
+        font-size: 1.3rem;
+    }
+    .navBar span{
+        right: 1rem;
+        font-size: .7rem;
+    }
+ 
+
+}

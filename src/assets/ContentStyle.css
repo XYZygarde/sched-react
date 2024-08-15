@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.courseCard{
+    height: 30rem;
+    width: 30rem;
+    display: block;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-rows: repeat(5, 120px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    justify-content: center;
+    margin: auto 50px;
+    
+}
+.courseCard h2{
+    font-family: var(--gFont);
+    color: var(--gColor);
+    font-weight: 800;
+    font-size: 15px;
+    margin-top: 5rem;
+    width: 600px;
+    text-align: center;
+}
+
+.courseCard ul li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.courseCard ul li:first-child{
+    color: var(--gColor);
+    font-size: 1.8rem;
+    font-family: "Radio Canada Big", sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 850px){
+    .courseCard{
+        width: 2rem;
+        margin-bottom: 2rem;
+    }
+    .courseCard h2,
+    .courseCard ul li{
+        width: 20rem;
+        font-size: 1rem;
+    }
+    .courseCard ul li:first-child{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+ 
+  
+
+}
